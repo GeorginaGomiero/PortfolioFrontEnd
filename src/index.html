@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!--Metadatos - ayuda a los motores de búsqueda--> 
+    <meta charset="utf-8">
+    <meta name="author" content="Georgina Gomiero">
+    <meta name="description" content="Portfolio Georgina Gomiero">
+           <!--palabras claves del proyecto-->
+    <meta name="keywords" content="HTML, CSS, JavaScript, React">
+           <!--ajusta la ventana del navegador a la pantalla-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!--Título-->
+    <title>Georgina Gomiero | Portfolio</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="images/geo.jfif">
+
+    <!--Tipografía - Google Fonts-->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    <!--Iconos Bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+
+    <!--CSS-->
+    <link href="styles.css" rel="stylesheet">
+  </head>
+  <body>
+    <!--Barra de Navegación-->
+    <nav class="navbar navbar-expand-md navbar-light">
+      <div class="container-fluid">
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbar-toggler">
+          <a class="navbar-brand" href="#"></a>
+          <ul class="navbar-nav d-flex justify-content-center align-items-center">
+            
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#sobre-mi">Sobre Mí</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="#experiencia">Experiencia</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="#proyectos">Proyectos</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="#contacto">Contacto</a>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!--seccion hero-->
+    <section class="hero align-items-stretch">
+      <div class="hero-principal d-flex flex-column justify-content-center align-items-center">
+        <img class="hero-foto-personal rounded-circle" src="images/geo.jfif" alt="Foto Geo">
+        <h1>Hola, soy Georgina Gomiero</h1>
+        <h2>Técnica Superior en Comunicación Social y Desarrolladora Web</h2>
+      </div>
+    </section>
+
+    <!--Seccion sobre mí-->
+    <section id="sobre-mi" class="sobre-mi seccion-oscura">
+      <div class="contenedor">
+        <h2 class="seccion-titulo">Conoce a Georgina Gomiero</h2>
+        <p class="seccion-texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a suscipit lectus, et imperdiet erat. Nulla eu nunc vitae eros scelerisque consequat. Suspendisse vitae convallis lacus, vel porta neque. Etiam sit amet urna pretium, placerat metus nec, finibus dui. Nullam ligula leo, mollis scelerisque massa sit amet, mattis ornare elit. In eu sagittis diam. Duis sodales sapien eu tempus vehicula. Vivamus tincidunt faucibus dolor, vitae feugiat sem accumsan et. Phasellus elementum, dolor a accumsan dictum, orci nisl convallis urna, a iaculis dui orci pretium tortor. Sed lobortis egestas nunc eu tincidunt. Duis bibendum lobortis lectus in ultrices. Aliquam ultrices hendrerit posuere. Aenean at ultricies arcu, a facilisis purus. Morbi lacus quam, tristique ut tristique id, imperdiet nec massa.</p>
+      </div>
+    </section>
+
+    <!--seccion experiencia-->
+    <section id="experiencia" class="experiencia seccion clara">
+      <div class="container text-center">
+        <div class="row">
+          
+          <!--col-12 significa que ocupara toda la pantalla pero cuando la pantalla sea menor a 770px la columna ocupará solo 4 espacios por eso se dice col-md-4-->
+
+          <!--Comunicación Social-->
+          <div class="columna col-12 col-md-3">
+            <i class="bi bi-megaphone"></i>
+            <p class="experiencia-titulo">Comunicación Social</p>
+            <p>orem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a suscipit lectus, et imperdiet erat. Nulla eu nunc vitae eros scelerisque consequat.</p>
+            <div class="badges-contenedor">
+              <span class="badge text-bg-primary">Radio</span>
+              <span class="badge text-bg-primary">Locución</span>
+              <span class="badge text-bg-primary">TV</span>
+              <span class="badge text-bg-primary">Diseño</span>
+              <span class="badge text-bg-primary">Redacción</span>
+              <span class="badge text-bg-primary">Redes Sociales</span>
+              <span class="badge text-bg-primary">Marketing Digital</span>
+            </div>
+          </div>
+          
+          <!--Desarrollo Web-->
+          <div class="columna col-12 col-md-3">
+            <i class="bi bi-laptop"></i>
+            <p class="experiencia-titulo">Desarrollo Web</p>
+            <p>orem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a suscipit lectus, et imperdiet erat. Nulla eu nunc vitae eros scelerisque consequat.</p>
+            <div class="badges-contenedor">
+              <span class="badge text-bg-primary">HTML</span>
+              <span class="badge text-bg-primary">CSS</span>
+              <span class="badge text-bg-primary">JavaScript</span>
+            </div>
+          </div>
+          
+          <!--Programación-->
+          <div class="columna col-12 col-md-3">
+            <i class="bi bi-code-square"></i>
+            <p class="experiencia-titulo">Programación</p>
+            <p>orem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a suscipit lectus, et imperdiet erat. Nulla eu nunc vitae eros scelerisque consequat.</p>
+            <div class="badges-contenedor">
+              <span class="badge text-bg-primary">Python</span>
+              <span class="badge text-bg-primary">Java</span>
+            </div>
+          </div>
+        
+          <div class="columna col-12 col-md-3">
+            <i class="bi bi-database"></i>
+            <p class="experiencia-titulo">Base de Datos</p>
+            <p>orem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a suscipit lectus, et imperdiet erat. Nulla eu nunc vitae eros scelerisque consequat.</p>
+            <div class="badges-contenedor">
+              <span class="badge text-bg-primary">SQLite</span>
+              <span class="badge text-bg-primary">Access</span>
+              <span class="badge text-bg-primary">MySQL</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--proyectos-->
+    <section id="proyectos" class="proyectos-recientes seccion-clara d-flex flex-column">
+      <h2 class="seccion-titulo texto-negro">Mis proyectos</h2>
+      <h3 class="seccion-descripcion">Estos son algunos de mis trabajos recientes</h3>
+      <!--Galeria de proyectos-->
+      <div class="container text-center proyectos-contenedor">
+        <div class="row">
+          
+          <!--Proyecto 1-->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img src="images/proyecto 1.jpg" alt="Proyecto 1">
+              <div class="overlay">
+                <p>Redacción de noticias periodísticas</p>
+                <div class="iconos-contenedor">
+                  <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-github"></i>
+                  </a>
+                  <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-laptop"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!--Proyecto 2-->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img src="images/proyecto 1.jpg" alt="Proyecto 1">
+              <div class="overlay">
+                <p>Redacción de noticias periodísticas</p>
+                <div class="iconos-contenedor">
+                  <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-github"></i>
+                  </a>
+                  <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-laptop"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!--Proyecto 3-->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img src="images/proyecto 1.jpg" alt="Proyecto 1">
+              <div class="overlay">
+                <p>Redacción de noticias periodísticas</p>
+                <div class="iconos-contenedor">
+                  <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-github"></i>
+                  </a>
+                  <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-laptop"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!--Proyecto 4-->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img src="images/proyecto 1.jpg" alt="Proyecto 1">
+              <div class="overlay">
+                <p>Redacción de noticias periodísticas</p>
+                <div class="iconos-contenedor">
+                  <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-github"></i>
+                  </a>
+                  <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-laptop"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!--Proyecto 5-->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img src="images/proyecto 1.jpg" alt="Proyecto 1">
+              <div class="overlay">
+                <p>Redacción de noticias periodísticas</p>
+                <div class="iconos-contenedor">
+                  <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-github"></i>
+                  </a>
+                  <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-laptop"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!--Proyecto 6-->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img src="images/proyecto 1.jpg" alt="Proyecto 1">
+              <div class="overlay">
+                <p>Redacción de noticias periodísticas</p>
+                <div class="iconos-contenedor">
+                  <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-github"></i>
+                  </a>
+                  <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-laptop"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="https://github.com/" target="_blank" rel="noopener noreferrer"></a>
+        <button type="button" class="btn btn-info">
+          <!--Ver más proyectos-->
+          <i class="bi bi-arrow-right-circle-fill"></i>
+        </button>
+      </a>
+    </section>
+
+    <!--seccion contacto-->
+    <section id="contacto" class="contacto seccion-oscura">
+      <div class="container">
+        <div class="container text-center rectangulo d-flex justify-content-evenly">
+          <div class="row">
+            <div class="col-12 col-md-4 seccion-titulo">
+              ¡Hablemos!
+            </div>
+            <div class="col-12 col-md-4 descripcion">
+              Contáctame para iniciar tu proyecto y haré que tu visión se vuelva realidad
+            </div>
+            <div class="col-12 col-md-4">
+              <a href="mailto:georginagomiero@gmail.com">
+                <button type="button">
+                  Contacto
+                  <i class="bi bi-envelope-check-fill"></i>
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Pie de pagina-->
+    <footer class="seccion-oscura d-flex flex-column align-items-center justify-content-center">
+      <img class="footer-logo" src="" alt="Logo del Portfolio" >
+      <p class="footer-texto text-center"> Aprendo y creo todos los días. <br> Creemos un proyecto juntos</p>
+      <div class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center">
+        <a href="" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-whatsapp"></i>
+        </a>
+        <a href="" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-github"></i>
+        </a>
+        <a href="" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-linkedin"></i>
+        </a>
+        <a href="mailto:georginagomiero@gmail.com" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-envelope"></i>
+        </a>
+      </div>
+      <div class="derecho-autor">Creado por Georgina Gomiero (2022) &#169;</div>
+    </footer>
+
+    <!--JavaScript-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  </body>
+</html>

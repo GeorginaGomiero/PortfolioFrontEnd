@@ -1,0 +1,57 @@
+<div class="content" role="main">
+
+  <!-- Highlight Card -->
+    <span>¡Hola! Soy Georgina Gomiero</span>
+
+<!-- Sobre mí -->
+  <h2>Técnica en Comunicación Social, Programadora y Desarrolladora Web</h2>
+  <p>Te invito a dar un recorrido por aquí para que me conozcas un poco más</p>
+
+  <div class="card-container">
+    <a class="card" target="_blank" rel="noopener" href="#">
+      <span>Conocimientos</span>
+    </a>
+
+    <a class="card" target="_blank" rel="noopener" href="#">
+      <span>Experiencia</span>
+    </a>
+        <a class="card" target="_blank" rel="noopener" href="#">
+      <span>Proyectos de Programación</span>
+    </a>
+
+
+    <a class="card" target="_blank" rel="noopener" href="#">
+      <span>Proyectos de Comunicación</span>
+    </a>
+
+    <a class="card" target="_blank" rel="noopener" href="#">
+      <span>Proyectos de Desarrollo Web</span>
+    </a>
+
+  </div>
+
+<!-- Contacto -->
+  <h2>Contáctame</h2>
+  <p>Elige el medio por el que te gustaría contactarme</p>
+
+  <input type="hidden" #selection>
+  <div class="card-container">
+    <button class="card card-small" (click)="selection.value = 'component'" tabindex="0">
+      <span>WhatsApp</span>
+    </button>
+
+    <button class="card card-small" (click)="selection.value = 'material'" tabindex="0">
+      <span>Correo</span>
+    </button>
+
+    <button class="card card-small" (click)="selection.value = 'pwa'" tabindex="0">
+      <span>Llamada telefónica</span>
+    </button>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    ¿Querés conocer algunos de mis proyectos?<button href="#" target="_blank" rel="noopener">Aquí te muestro</button>
+  </footer>
+</div>
+<router-outlet></router-outlet>
