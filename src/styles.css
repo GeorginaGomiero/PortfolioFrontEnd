@@ -1,3 +1,4 @@
+/* You can add global styles to this file, and also import other style files */
 *{
     font-family: 'Caveat';
 }
@@ -5,13 +6,21 @@
 /*Barra de navegación*/
 
 .navbar{
-    padding: 2rem;
-    background-color: #f5f6f7;
+    background-color: rgb(95, 149, 230);
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    z-index: 2000;
 }
-    
+
 .navbar-collapse{
     align-items: center;
     justify-content: space-between;
+    font-size: 20px;
+}
+
+.navbar-collapse .nav-link:hover{
+    font-size: 25px;
 }
 
 /*estilos generales*/
@@ -23,8 +32,15 @@ section{
 }
 
 h1{
-    font-size: 1 rem;
+    font-size: 40px;
     font-family: 'Caveat', cursive;
+    margin-top: 45px;
+}
+
+h2{
+    font-size: 20px;
+    font-family: 'Caveat', cursive;
+    margin-top: 40px;
 }
 
 .seccion-oscura{
@@ -38,22 +54,13 @@ h1{
 }
 
 .seccion-titulo{
-    font-size: 2rem;
-    padding: -30px;
+    font-size: 40px;
     font-family: 'Caveat', cursive;
 }
 
-.seccion-descripcion{
-    font-size: 1.2rem;
-    color: #584e4e;
-}
 .seccion-texto{
-    font-size: 1.2rem;
-}
-
-.btn-info {
-    font-size: 1.1rem;
-    margin: 15px;
+    font-size: 20px;
+    margin-top: 25px;
 }
 
 .texto-negro{
@@ -63,6 +70,7 @@ h1{
 .texto-blanco{
     color: white;
 }
+
 /*seccion hero*/
 
 .hero{
@@ -72,39 +80,38 @@ h1{
 }
 
 .hero-principal{
-    padding: 3rem;
+    padding: 10px;
+    margin-top: 50px;
 }
 
 .hero-principal h2{
-    font-size: 0.9rem;
-    color: #615151;
+    font-size: 15px;
+    color: #111111;
 }
+
 .hero-foto-personal{
-   width: 200px;
-   height: 200px; 
-   border-radius: 50%;
-   margin: 20px;
+width: 200px;
+height: 200px; 
+border-radius: 50%;
+margin: 20px;
 }
 
-/*Seccion obre mi*/
-
-.sobre-mi{
-    height: 500px;
-    padding: 10px;
-}
-
-.sobre-mi .contenedor{
-    max-width: 600px;
+.contenedor{
+    max-width: 800px;
     text-align: center;
+    margin-left: 145px;
+    margin-bottom: 15px;
 }
 
 /*Seccion experiencia*/
 .experiencia{
-    padding: 10px 5px 10px 10px;
+    padding: 10px;
+    margin-top: 25px;
+    margin-bottom: -25px;
 }
 
 .columna{
-    padding: 60px 25px;
+    padding: 30px 20px;
 }
 
 .experiencia-titulo{
@@ -115,7 +122,7 @@ h1{
 
 .experiencia i {
     font-size: 2.5rem;
-    color: #7ade30;
+    color: #7152c5;
     background-color: #0a0a23;
     padding: 8px 19px;
     border-radius: 50%;
@@ -124,31 +131,23 @@ h1{
 .badges-contenedor{
     font-size: 20px;
     font-weight: bold;
-    margin: 10px 0;
+    margin: 10px;
 }
 
-.badges{
+.badge{
     margin: 5px;
 }
 
 /*proyectos*/
-
-.proyectos-recientes{
-   padding: 25px; 
-}
-
-.proyectos-recientes img {
-    height: 100%;
-    width: 100%;
-    padding: 10px;
-    border-radius: 10px;
-    display: block;
-    transition: all 0.2s ease;
+.proyectos{
+   margin-bottom: 30px;
+   margin-top: 10px;
 }
 
 .proyectos-contenedor{
-    padding-top: 60px;
-    margin-bottom: 40px;
+    padding-bottom: 35px;
+    margin-bottom: 90px;
+    margin-top: 50px;
 }
 
 /*overlay es un contenido que se le agrega sobre la imagen */
@@ -160,36 +159,47 @@ h1{
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+    border-radius: 25px;
 }
 
-.overlay p {
-    font-size: 20px;
-    font-weight: bold;
-    margin-bottom: 0;
+.proyecto p {
+    font-size: 25px;
+    margin-top: 25px;
 }
 
 .proyecto{
-    position: relative;
-}
-
-.proyecto:hover img{
-    opacity:0.2
+    position:relative;
+    text-align: center;
+    border-radius: 25px;
+    width: 250px;
+    height: 130px;
+    border-style:dashed;
+    border-color: rgb(13, 110, 253)
 }
 
 .proyecto:hover .overlay{
     opacity: 1;
+    background-color: rgb(13, 110, 253);
 }
 
 .overlay .iconos-contenedor{
     display: flex;
-    margin: 30px
+    margin: 30px;
 }
 
 .overlay i {
-    color: black;
+    color: #0a0a23;
     font-size: 40px;
     margin: 25px;
 }
+
+/*boton ver mas de proyectos
+.btn-info {
+    font-size: 20px;
+    margin: -15px;
+    padding: 10px;
+    margin-bottom: 75px;
+}*/
 
 /*seccion contacto*/
 
@@ -249,9 +259,9 @@ footer{
 
 .footer-texto{
     font-size: 1.5rem;
-    padding: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
     font-family: sans-serif;
+    margin-top: -50px;
 }
 
 .iconos-redes-sociales a {
@@ -274,8 +284,7 @@ footer{
 }
 
 .iconos-redes-sociales a:hover{
-    background-color: white;
-    border: 2px solid rgb(13, 110, 253)
+    background-color: rgb(13, 110, 253);
 }
 
 .iconos-redes-sociales a:hover i{
